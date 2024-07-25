@@ -1,0 +1,129 @@
+body{
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: azure;
+    font-family: 'Poppins', sans-serif;
+}
+.starting{
+    height: 515px;
+    background-color: rgba(79, 185, 223, 0.764);
+    width:550px;
+    position: relative;
+    left: 100px;
+    top:150px;
+    border: 3px solid black;
+    border-style: hidden;
+    box-shadow: 5px 5px 5px  rgb(1, 14, 14);  
+    border-radius: 20px;
+}
+.heading{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    background-color: aliceblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.bigg_con{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.photo{
+  margin-top: 150px;
+  margin-left: 30px;
+  display: flex;
+  border-radius: 50px;
+}
+h2{
+  color: black;
+}
+form{
+    color: black;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 3px;
+
+}
+.monthbutton{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 6px 5px;
+    cursor: pointer;
+}
+.yearbutton{
+    color:black;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.button{
+     margin-top: 14px;
+     margin-left: 10px;
+     padding: 6px 5px;
+     border: none;
+     background-color: #4CAF50;
+     color: white;
+     cursor: pointer;
+     height: 30px;
+}
+.month{
+  padding-left: 5px;
+}
+.expiry_label{
+  margin-left: 7px;
+}
+input{
+  height: 20px;
+  width: 310px;
+  border-radius: 5px;
+}
+.input-field{
+  margin: 5px;
+  padding-bottom: 10px;
+}
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 2;
+    opacity: 0.7;
+  }
+  header .container{
+    display: flex;
+   justify-content: space-between;
+   margin: 0;
+  }
+  header .container .image{
+    padding: 3px;
+    height: 100px;
+    width: 150px;
+   }
+   header .container .image img{
+     height: 100%;
+   }
+   header nav ul{
+     list-style-type: none;
+   }
+   header nav ul li{
+     display: inline-block;
+   }
+   header nav ul li a{
+     display: inline-block;
+     height: 75px;
+     line-height: 75px;
+     padding: 0 15px 0 15px;
+     text-decoration: none;
+     text-transform: capitalize;
+     font-size: 16px;
+     color: #fff;
+     transition: 0.3s;
+   }
+   header nav ul li a:hover{
+     background-color:#e43a47 ;
+   }
+
+   
+  

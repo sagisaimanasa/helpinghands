@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Volunteer Registration Form</title>
+	<style>
+		body{
+			font-family: 'Poppins', sans-serif;
+			margin: 0;
+			background-color: azure;
+		}
+		.photos_container{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+            grid-gap: 50px;
+			justify-content: flex-end;
+		}
+        .photos_container img{
+			width: 500px;
+			margin-top: 70px;
+			margin-left: 100px;
+			margin-right: 10px;
+			height: 500px;
+		}
+		.form_container h1{
+			margin-top: 200px;
+			text-align: center;
+			font-size: 50px;
+			text-shadow: #ccc;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		    animation: colorchange 5s infinite alternate;
+		}
+		     
+@keyframes colorchange{
+    0%{
+        color: aqua;
+    }
+    20%{
+        color: #40B5AD;
+    }
+    40%{
+        color: burlywood;
+    }
+    60%{
+        color: #333;
+    }
+    80%{
+        color: #ad7d52;
+    }
+    100%{
+        color:red;
+	}
+} 
+
+		form {
+			display:block;
+			background-color: rgb(145, 196, 240);
+			max-width: 500px;
+			margin-top: 50px;
+			margin-left: 450px;
+			margin-bottom: 20px;
+			padding: 50px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+	        box-shadow: yellowgreen;
+			font-family: Arial, sans-serif;
+			background-color:rgba(79, 185, 223, 0.764);
+		}
+
+		#forms h2 {
+			text-align: center;
+			margin-top: 0;
+			padding-top: 0;
+		}
+
+		input[type="text"], input[type="email"], select, textarea {
+			display: block;
+			width: 100%;
+			padding: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-family: 'Poppins', sans-serif;
+
+		}
+
+		select {
+			height: 40px;
+		}
+
+		textarea {
+			height: 100px;
+		}
+
+		input[type="submit"] {
+			display: block;
+			margin: auto;
+			background-color: grey;
+			color: #fff;
+			border: none;
+			border-radius: 6px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+			font-family: 'Poppins', sans-serif;
+			margin-bottom: 10px;
+		}
+		input[type="submit"]:hover {
+			background-color:red;
+		}
+		header{
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: absolute;
+  z-index: 2;
+  opacity: 0.7;
+  border: 1px;
+  display: block;
+}
+header .container{
+  display: flex;
+ justify-content: space-between;
+ margin-top: 0;
+}
+header .container .image{
+  padding: 3px;
+  height: 100px;
+  width: 150px;
+ }
+ header .container .image img{
+   height: 100%;
+ }
+ header nav ul{
+   list-style-type: none;
+ }
+ header nav ul li{
+   display: inline-block;
+ }
+ header nav ul li a{
+   display: inline-block;
+   height: 75px;
+   line-height: 75px;
+   padding: 0 15px 0 15px;
+   text-decoration: none;
+   text-transform: capitalize;
+   font-size: 16px;
+   color: #fff;
+   transition: 0.3s;
+ }
+ header nav ul li a:hover{
+   background-color:#e43a47 ;
+ }
+
+ .form_container{
+	border: 2px solid;
+	display: block;
+ }
+ .footerimg{
+  height: 100px;
+  width: 150px;
+}
+footer{
+	background-color:#24262b;
+  color: #7f7f7f;
+  padding: 50px 0;
+  font-size: 14px;
+}
+footer .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+footer .title{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+  padding: 0 0 5px 0;
+}
+footer p{
+  margin-bottom: 10px;
+}
+footer .linkscon ul{
+  list-style-type: none;
+}
+footer .linkscon ul li a{
+  text-decoration: none;
+  color: #7f7f7f;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+footer .newsLetter img{
+  margin-bottom: 12px;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+        <div class="container">
+          <div class="image">
+            <img src="help1.jpg" alt="LOGO" class="image" />
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="home.html">HOME</a>
+              </li>
+              <li>
+                <a href="home.html">About Us</a>
+              </li>
+              <li>
+                <a href="home.html">Gallery</a>
+              </li>
+              <li>
+                <a href="home.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+		<div class="form_container">
+			<h1>REGISTER BELOW</h1>
+			<div class="photos_container">
+				<img class="Vol_photo" src="pexels-photo-6646918.webp" alt="ph">
+				<img class="Vol-photo1" src="We Need You stock photo_ Image of recruitment, announcement - 37209900.jpg" alt="ph">
+			</div>
+			<form id="forms" action="/Volunteer.html" method="post">
+				<h2>Volunteer Registration Form</h2>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" autocomplete="off" required>
+		
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" autocomplete="off" required>
+		
+				<label for="age">Age</label>
+				<input type="text" id="age" name="age" autocomplete="off" required>
+		
+				<label for="phone">Phone Number</label>
+				<input type="text" id="phone" name="phone" autocomplete="off" required>         
+		
+				<label for="interests">Interests</label>
+				<textarea id="interests" name="interests"></textarea>
+		
+				<label for="availability">Availability</label>
+				<textarea id="availability" name="availability" autocomplete="off" required></textarea>
+		
+				<label for="message">Message</label>
+				<textarea id="message" name="message" autocomplete="off" ></textarea>
+		
+				<input type="submit" name="submit" value="Submit">
+			</form>
+		</div>
+        <footer id="foot">
+			<div class="container">
+	
+				<div class="newsLetter">
+				  <img src="help1.jpg" class="footerimg" alt="">
+				  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+					numquam hic at alias rerum reiciendis sunt rem, vero
+					animi blanditiis similique nihil.</p>
+				</div>
+				 <div class="linkscon">
+					<div class="title">Useful links</div>
+					<ul>
+					  <li>
+						<a href="#home">HOME</a>
+					  </li>
+					  <li>
+						<a href="#about">About Us</a>
+					  </li>
+					  <li>
+						<a href="#gallery">Gallery</a>
+					  </li>
+					  <li>
+						<a href="#">Contact</a>
+					  </li>
+					</ul>
+				   </div> 
+				 <div class="contactcont">
+				  <div class="title">Connect With us</div>
+				  <p>VIGNAN'S INSTITUE OF INFORMATION & TECHNOLOGY,DUVVADA <br>
+					   VISAKHAPATNAM.
+				  </p>
+				  <p>+91 8478919879</p>
+				 </div>
+			</div>
+		  </footer>
+</body>
+</html>

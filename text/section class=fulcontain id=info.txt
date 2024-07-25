@@ -1,0 +1,20 @@
+<section class="fulcontain" id="info">
+       <div class="cont">  
+        <h2 class="secTitle">World Poverty!</h2>
+        <div class="slider">
+          <div class="imgs">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <img src="https://pbs.twimg.com/media/EOuKupUXkAE0f02.png" alt="img1" class="m1">
+            <img src="https://i.pinimg.com/736x/fc/93/eb/fc93eb2564761ec4710ef040fc2cae09--population-in-india.jpg" alt="img1" class="m2">
+            <img src="https://lh6.googleusercontent.com/fRKYU0EijVRa31t3bNfQiiuLSK5nTnj0_9eELE9SFADBNoPKQNGnlrGwPP06zJHXE-M6hAARRXW_7P9QVlq_fwanCfnwgGbuHqbNrC2z56eTFFXjLZFVwPS2hfdbiN4gPqJA8jUV" alt="img1" class="m3">
+          </div>
+          <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img3"></label>
+          </div>
+        </div>
+       </div> 
+    </section>

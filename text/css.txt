@@ -1,0 +1,322 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+button,body{
+    font-family: 'Poppins', sans-serif;
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}  
+.Fcontainer{
+  width: 100%;
+  
+}
+.container{
+  width: 1200px;
+  margin: auto;
+}
+p{
+  font-size: 14px;
+  line-height: 26px;
+}
+header{
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  z-index: 2;
+}
+header .container{
+  display: flex;
+ justify-content: space-between;
+}
+header .container .image{
+  padding: 5px 0;
+  height: 100px;
+  width: 150px;
+ }
+ header .container .image img{
+   height: 100%;
+ }
+ header nav ul{
+   list-style-type: none;
+ }
+ header nav ul li{
+   display: inline-block;
+ }
+ header nav ul li a{
+   display: inline-block;
+   height: 75px;
+   line-height: 75px;
+   padding: 0 15px 0 15px;
+   text-decoration: none;
+   text-transform: capitalize;
+   font-size: 16px;
+   color: #fff;
+   transition: 0.3s;
+ }
+ header nav ul li a:hover{
+   background-color:#e43a47 ;
+ }
+
+ .banner{
+  min-height: 100vh;
+  background-image: url("pexels-photo-1006363.jpeg");
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+.banner h1{
+  margin-top: 300px;
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+  width: 50%;
+  line-height: 4.2rem;
+  font-weight: 100;
+}
+.banner p{
+  color: cornsilk;
+  width: 50%;
+  text-shadow: 0 0 2px #000;
+  font-weight: 100;
+  margin-top: 10px;
+}
+
+.banner h1 span{
+  background-color: #e43a47;
+  display: inline-block;
+  line-height: 4rem;
+  padding: 0 20px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.banner button{
+  background-color: #e43a47;
+  color: cornsilk;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
+.secTitle{
+    width: 300px;
+    border-bottom: 3px solid #e43a47;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.secTitle::after{
+  display: inline-block;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color:#e43a47;
+  position: absolute;
+  left:calc(50% - 10px);
+  top: calc(22% - 3px);
+  transform: rotate(45deg) translate(50%,50%);
+  border: 3px solid #fff;
+}
+section{
+  padding: 50px 0;
+  position: relative;
+  background-color: gold;
+}
+#about .card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  position: relative;
+  height: 245px;
+}
+#about .card >div{
+  width: 350px;
+  background-color:#efefef;
+  padding: 35px;
+  color: #444;
+  text-align: center;
+  border-radius: 8px;
+  height: 225px;
+  border: 1px solid #ccc;
+}
+
+#about .card > div:hover{
+  width: 400px;
+  margin-top: -20px;
+  border-color: #e43a47;
+  padding: 55px;
+  height: auto;
+}
+
+
+#about .card > div .title{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#about .card >div p{
+  font-size: 12px;
+  margin-top: 12px;
+}
+#about .card >div button{
+  outline: none;
+  border: 1px solid #e43a47;
+  padding: 8px 16px;
+  margin-top: 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#about .card >div:hover button{
+  background-color: #e43a47;
+  color: #ccc;
+}
+
+.gallery .galleryContainer{
+  column-count: 4;
+  column-gap: 20px;
+}
+
+.gallery .galleryContainer .item{
+  position: relative;
+  margin-bottom:15px;
+  overflow: hidden;
+}
+
+.gallery .galleryContainer img{
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+.gallery .galleryContainer .title{
+  position: absolute;
+  background-color: #efefef;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.4s;
+}
+.gallery .galleryContainer .item:hover .title{
+  opacity: 1;
+}
+.gallery .galleryContainer .item:hover img{
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.footerimg{
+  height: 100px;
+  width: 150px;
+}
+footer{
+  background-color: #000;
+  color: #7f7f7f;
+  padding: 50px 0;
+  font-size: 14px;
+}
+footer .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+footer .title{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+  padding: 0 0 5px 0;
+}
+footer p{
+  margin-bottom: 10px;
+}
+footer .linkscon ul{
+  list-style-type: none;
+}
+footer .linkscon ul li a{
+  text-decoration: none;
+  color: #7f7f7f;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+footer .newsLetter img{
+  margin-bottom: 12px;
+}
+
+
+@media screen and (max-width:1140px) {
+    .container{
+      width: 100%;
+      padding: 0 15px;
+    }
+}
+@media screen and (max-width:1080px){
+  .banner h1{
+    margin-top: 200px;
+  }
+  #about .card{
+    justify-content: space-around;
+    height: auto;
+  }
+  #about .card >div{
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .banner{
+    background-position-x:45%;
+  }
+  .banner h1{
+    font-size: 2.5rem;
+
+  }
+}
+@media screen and (max-width:768px){
+   header nav{
+    position: relative;
+    border: 2px solid #fff;
+    height: 30px;
+    width: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+   }
+   header nav:after{
+       top: 17px;
+   }
+   header nav:before{
+       top:7px;
+   }
+   header nav:after,header nav:before{
+    content: "";
+    height: 2px;
+    width: 17px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    left: 5px;
+   }
+}
+  </style>
